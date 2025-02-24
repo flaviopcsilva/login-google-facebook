@@ -7,6 +7,6 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    return 'API está funcionando!';
+    return this.appService.getHello();
   }
 }
