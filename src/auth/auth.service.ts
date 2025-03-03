@@ -19,6 +19,7 @@ export class AuthService {
         if (!user) {
             user = this.userRepository.create({
                 name: profile.name,
+                password: 'n/a',
                 firstname: profile.given_name || profile.first_name,
                 lastname: profile.family_name || profile.last_name,
                 email: profile.email,
